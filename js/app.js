@@ -28,11 +28,11 @@ function callOut(){
       $(".score").hide();
 
       var question = resultArray[counter].question; //grabbing value of question & inserting into thr HTML
-      $(h2).text(question);
+      $(h2).html(question);
       console.log('run 2nd');
 
       answerCor = resultArray[counter].correct_answer;
-      $("label[for='radioButton1']").text(answerCor);
+      $("label[for='radioButton1']").html(answerCor);
       $("#radioButton1").val(answerCor);
 
       answerIncor1 = resultArray[counter].incorrect_answers[0];
