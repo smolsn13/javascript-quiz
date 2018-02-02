@@ -2,9 +2,40 @@
 <html>
 <head>
   <title>JavaScript Quiz</title>
-  <script src="/js/index.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="./css/style.css">
+
 </head>
 <body>
-  <h1>Hello world!</h1>
+  <h1 class="title"></h1>
+  <div class="score">Congrats! You Got A Score Of:</div>
+  <div class = "game">
+  <div class="container">
+    <h2 class="question"></h2>
+  </div>
+  <div class="answer">
+    <form id="form">
+      <input type="radio" class="rad" id="radioButton1" name="answers" value="">
+      <label for="radioButton1"></label>
+      <br />
+      <input type="radio" class="rad" id="radioButton2" name="answers" value="">
+      <label for="radioButton2"></label>
+      <br />
+      <input type="radio" class="rad" id="radioButton3" name="answers" value="" checked="checked">
+      <label for="radioButton3"></label>
+      <br />
+      <input type="radio" class="rad" id="radioButton4" name="answers" value="">
+      <label for="radioButton4"></label>
+    </form>
+  </div>
+  </div>
+  <div class="submit">
+      <button type="button" id="submit">NEXT YO</button>
+  </div>
+  </div>
+  <script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="./js/app.js" type="text/javascript"></script>
 </body>
 </html>
