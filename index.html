@@ -1,41 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>JavaScript Quiz</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Dosis:400,500,600,700,800" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/style.css">
-
+  <title>JavaScript Quiz</title>
 </head>
 <body>
-  <h1 class="title"></h1>
-  <div class="score">Congrats! You Got A Score Of:</div>
-  <div class = "game">
-  <div class="container">
-    <h2 class="question"></h2>
+  <div class="container-fluid vertical-center">
+    <div class="row row1">
+      <div class="score col col-md-12">
+        Congrats! You Got A Score Of:
+      </div>
+    </div>
+    <div class="game row row2">
+      <div class="left-side col col-md-6">
+        <img src='https://www.justwatch.com/images/backdrop/8569103/s1440/saved-by-the-bell' class="img-fluid" alt="Responsive image">
+      </div>
+      <div class="middle col-md-1">
+      </div>
+      <div class="right-side col col-md-5">
+          <div class="row align-items-center">
+            <h2 class="question"></h2>
+            <form id="form">
+              <input type="radio" class="rad" id="radioButton1" name="answers" value="">
+              <label for="radioButton1"></label>
+              <br />
+              <input type="radio" class="rad" id="radioButton2" name="answers" value="">
+              <label for="radioButton2"></label>
+              <br />
+              <input type="radio" class="rad" id="radioButton3" name="answers" value="" checked="checked">
+              <label for="radioButton3"></label>
+              <br />
+              <input type="radio" class="rad" id="radioButton4" name="answers" value="">
+              <label for="radioButton4"></label>
+            </form>
+          </div>
+          <div class="row submit">
+              <button type="button" id="submit">NEXT YO</button>
+          </div>
+      </div>
+    </div>
   </div>
-  <div class="answer">
-    <form id="form">
-      <input type="radio" class="rad" id="radioButton1" name="answers" value="">
-      <label for="radioButton1"></label>
-      <br />
-      <input type="radio" class="rad" id="radioButton2" name="answers" value="">
-      <label for="radioButton2"></label>
-      <br />
-      <input type="radio" class="rad" id="radioButton3" name="answers" value="" checked="checked">
-      <label for="radioButton3"></label>
-      <br />
-      <input type="radio" class="rad" id="radioButton4" name="answers" value="">
-      <label for="radioButton4"></label>
-    </form>
-  </div>
-  </div>
-  <div class="submit">
-      <button type="button" id="submit">NEXT YO</button>
-  </div>
-  </div>
-  <script
-  src="http://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   <script src="./js/app.js" type="text/javascript"></script>
 </body>
 </html>
