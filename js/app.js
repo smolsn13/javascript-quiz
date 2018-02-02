@@ -18,10 +18,10 @@ $(document).ready(function() {
 
 function callOut(){
 
-      $( ".game" ).fadeOut(500, function() {
+      $( ".question" ).fadeOut(500, function() {
       // Animation complete.
       });
-      $( ".game" ).fadeIn(500, function() {
+      $( ".question" ).fadeIn(500, function() {
       });
 
       $("#submit").off("click");
